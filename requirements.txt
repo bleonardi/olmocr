@@ -1,2 +1,2 @@
 streamlit
-olmocr[gpu] @ git+https://github.com/YOUR_USERNAME/olmocr.git@gpu-branch-name
+olmocr[gpu]

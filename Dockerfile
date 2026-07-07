@@ -14,8 +14,8 @@ RUN apt-get update && apt-get install -y \
     ln -sf /usr/bin/python3 /usr/bin/python && \
     pip install --upgrade pip
 
-# Install olmocr from your fork (replace with your actual GitHub URL)
-RUN pip install git+https://github.com/YOUR_USERNAME/olmocr.git@gpu-branch-name#egg=olmocr[gpu] --find-links https://flashinfer.ai/whl/cu124/torch2.4/flashinfer/
+# Install olmocr[gpu] from PyPI
+RUN pip install "olmocr[gpu]" --find-links https://flashinfer.ai/whl/cu124/torch2.4/flashinfer/
 
 # Install Streamlit
 RUN pip install streamlit
